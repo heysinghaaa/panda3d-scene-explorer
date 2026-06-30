@@ -1,0 +1,19 @@
+[project]
+name = "panda3d-scene-explorer"
+version = "0.1.0"
+description = "Small Panda3D scene explorer for camera movement, model loading, and task-loop practice."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "panda3d>=1.10,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<9",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
